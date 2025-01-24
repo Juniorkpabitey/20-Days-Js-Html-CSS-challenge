@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    height: 100vh;
+    background-color: bisque;
+}
+.button{
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background-color: white;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(218, 112, 112);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.button:hover{
+    letter-spacing: 0.1rem;
+}
+#newsletter{
+    position:fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    
+    background-color: white;
+    z-index: 1000;
+    width: 450px;
+    padding: 80px 50px 50px 50px;
+    transition: 0.5s;
+    border-radius: 4px;
+    visibility: hidden;
+}
+#newsletter.active{
+    visibility: visible;
+    top: 50%;
+}
+#newsletter h2{
+    text-align: center;
+    color: rgb(175, 130, 47);
+    font-size: 42px;
+    margin:20px 10px;
+}
+
+
+#newsletter p{
+    text-align: center;
+    color: rgb(175, 130, 47);
+    font-size: 20px;
+}
+
+#newsletter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button{
+width: 100%;
+border: 1px solid rgb(0, 0, 0, 0.1);
+padding: 15px;
+outline: none;
+font-size: 1rem;
+font-family: serif;
+}
+
+button{
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: rgb(175, 130, 47);
+    color:white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close{
+    position:absolute;
+    cursor: pointer;
+    top:50px;
+    right: 60px;
+}
+
+    
