@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Styler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change the CSS of the below image! with the help of the slider</h1>
+        <span class="heading">Javascript</span>
+        
+        <div class="css-control">
+            <label for="base">Base color</label>
+            <input type="color" name="base" id="base" value="#8a2be2">
+
+            <label for="width">width</label>
+            <input 
+            type="range" 
+            name="width" 
+            id="width" 
+            min="0" 
+            max="100" 
+            value="50" 
+            data-sizing="%">
+
+            <label for="boder">Border-radius</label>
+            <input type="range"
+            name="border-radius"
+            id="border-radius"
+            min="0"
+            max="100"
+            value="5"
+            data-sizing="px"
+            >
+
+            <label for="padding">Padding</label>
+            <input type="range"
+            name="padding"
+            id="padding"
+            min="10"
+            max="200"
+            value="0"
+            data-sizing="px"
+            >
+
+            <label for="boder">Blur</label>
+            <input type="range"
+            name="blur"
+            id="blur"
+            min="0"
+            max="25"
+            value="0"
+            data-sizing="px"
+            >
+        </div>
+        <img src="https://preview.redd.it/why-is-the-jonkler-high-quality-is-he-hd-v0-ifqiavio38mc1.jpeg?width=1024&format=pjpg&auto=webp&s=f23b333cce617d152e930cc80b48deb646353ec8" alt=" view images"  width="800" height="500">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
